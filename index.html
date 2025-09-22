@@ -1,0 +1,430 @@
+﻿<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="utf-8" />
+    <title>Tüntetésnaptár</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for headline -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', Arial, sans-serif;
+        }
+
+        .flag-bar {
+            background: linear-gradient(90deg, #C00 33%, #fff 33%, #fff 66%, #009639 66%);
+            height: 8px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col">
+    <!-- Magyar zászló színek -->
+    <div class="flag-bar w-full"></div>
+    <!-- Fő kép
+    <div class="w-full flex justify-center mt-6">
+        <img src="protest.jpg"
+             alt="Tüntető tömeg magyar zászlókkal"
+             class="rounded-lg shadow-lg w-full max-w-3xl object-cover h-64 border-4 border-white"
+             style="object-position: center 30%;" />
+    </div>
+    -->
+    <!-- Cím -->
+    <h1 class="text-4xl md:text-5xl font-bold text-center mt-6 mb-2 text-red-700 drop-shadow" style="letter-spacing:2px;">
+        Tüntetés.info
+    </h1>
+    <p class="text-center text-lg text-green-700 mb-8">ius murmurandi</p>
+    <!-- Szűrő -->
+    <div class="flex justify-center mb-6">
+        <input id="filterInput" type="text" placeholder="Szűrés tüntetésekre..."
+               class="px-4 py-2 border border-gray-300 rounded-lg w-full max-w-md focus:outline-none focus:ring-2 focus:ring-green-600" />
+    </div>
+    <!-- Tüntetések listája -->
+    <div id="protestList" class="flex flex-col gap-6 items-center px-2 mb-10">
+        <!-- tüntetés dobozok -->
+
+<div class="protest-box bg-white rounded-xl shadow-lg p-6 w-full max-w-2xl border-l-8 border-red-700 transition hover:scale-105" data-search="Tiltakoz&#225;s Alekszej Navalnij eml&#233;khely&#233;nek elt&#225;vol&#237;t&#225;sa ellen &#233;s az eredeti &#225;llapot vissza&#225;ll&#237;t&#225;s&#225;nak k&#246;vetel&#233;se.">
+    <div class="flex items-center gap-3 mb-2">
+        <svg class="w-7 h-7 text-green-700" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 018 8c0 5.25-8 10-8 10S2 15.25 2 10a8 8 0 018-8zm0 10a2 2 0 100-4 2 2 0 000 4z" /></svg>
+        <span class="text-xl font-bold text-gray-800">Tiltakoz&#225;s Alekszej Navalnij eml&#233;khely&#233;nek elt&#225;vol&#237;t&#225;sa ellen &#233;s az eredeti &#225;llapot vissza&#225;ll&#237;t&#225;s&#225;nak k&#246;vetel&#233;se.</span>
+    </div>
+    <div class="flex flex-wrap gap-4 text-gray-700 mb-2">
+        <div><span class="font-semibold">Időpont:</span> 2025. szeptember 24. (szerda) 
+        <span class="hidden iso-date">2025-09-24T00:00:00</span></div>
+        <div><span class="font-semibold">Helyszín:</span><a href="https://www.google.com/maps?q=Budapest%2C%20Bajza%20utca%2C%20az%20orosz%20nagyk%C3%B6vets%C3%A9g%20el%C5%91tt" class="underline" target=\"_blank\"> Budapest, Bajza utca, az orosz nagyk&#246;vets&#233;g előtt</a></div>
+        <div><span class="font-semibold">Szervező:</span> Ismeretlen szervező</div>
+        <div><span class="font-semibold text-red-700"></span></div>
+        <div><span class="font-semibold text-red-700"></span></div>
+    </div>
+    <div class="flex flex-wrap gap-3 mt-4">
+      <button class="add-to-google bg-red-600 text-white text-xs py-[2px] px-2 rounded-lg hover:bg-red-700 transition">
+        Google Naptár
+      </button>
+      <button class="add-to-ics bg-green-700 text-white text-xs py-[2px] px-2 rounded-lg hover:bg-gray-800 transition">
+        Letöltés (.ics)
+      </button>
+    </div>
+</div>
+
+<div class="protest-box bg-white rounded-xl shadow-lg p-6 w-full max-w-2xl border-l-8 border-green-600 transition hover:scale-105" data-search="L&#225;z&#225;rinfo">
+    <div class="flex items-center gap-3 mb-2">
+        <svg class="w-7 h-7 text-red-700" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 018 8c0 5.25-8 10-8 10S2 15.25 2 10a8 8 0 018-8zm0 10a2 2 0 100-4 2 2 0 000 4z" /></svg>
+        <span class="text-xl font-bold text-gray-800">L&#225;z&#225;rinfo</span>
+    </div>
+    <div class="flex flex-wrap gap-4 text-gray-700 mb-2">
+        <div><span class="font-semibold">Időpont:</span> 2025. szeptember 25. (csütörtök) 
+        <span class="hidden iso-date">2025-09-25T00:00:00</span></div>
+        <div><span class="font-semibold">Helyszín:</span><a href="https://www.google.com/maps?q=Sopron" class="underline" target=\"_blank\"> Sopron</a></div>
+        <div><span class="font-semibold">Szervező:</span> L&#225;z&#225;r J&#225;nos</div>
+        <div><span class="font-semibold text-red-700"></span></div>
+        <div><span class="font-semibold text-red-700"></span></div>
+    </div>
+    <div class="flex flex-wrap gap-3 mt-4">
+      <button class="add-to-google bg-red-600 text-white text-xs py-[2px] px-2 rounded-lg hover:bg-red-700 transition">
+        Google Naptár
+      </button>
+      <button class="add-to-ics bg-green-700 text-white text-xs py-[2px] px-2 rounded-lg hover:bg-gray-800 transition">
+        Letöltés (.ics)
+      </button>
+    </div>
+</div>
+
+<div class="protest-box bg-white rounded-xl shadow-lg p-6 w-full max-w-2xl border-l-8 border-red-700 transition hover:scale-105" data-search="Programbemutat&#243; a korm&#225;nyv&#225;lt&#225;s&#233;rt – Dobrev Kl&#225;ra &#218;jpesten">
+    <div class="flex items-center gap-3 mb-2">
+        <svg class="w-7 h-7 text-green-700" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 018 8c0 5.25-8 10-8 10S2 15.25 2 10a8 8 0 018-8zm0 10a2 2 0 100-4 2 2 0 000 4z" /></svg>
+        <span class="text-xl font-bold text-gray-800">Programbemutat&#243; a korm&#225;nyv&#225;lt&#225;s&#233;rt – Dobrev Kl&#225;ra &#218;jpesten</span>
+    </div>
+    <div class="flex flex-wrap gap-4 text-gray-700 mb-2">
+        <div><span class="font-semibold">Időpont:</span> 2025. szeptember 26. (péntek) 11:30
+        <span class="hidden iso-date">2025-09-26T11:30:00</span></div>
+        <div><span class="font-semibold">Helyszín:</span><a href="https://www.google.com/maps?q=Ujpest%20K%C3%B6zpont%20Polg%C3%A1r%20Centrum" class="underline" target=\"_blank\"> Ujpest K&#246;zpont Polg&#225;r Centrum</a></div>
+        <div><span class="font-semibold">Szervező:</span> DK &#218;jpest</div>
+        <div><span class="font-semibold text-red-700"></span></div>
+        <div><span class="font-semibold text-red-700"></span></div>
+    </div>
+    <div class="flex flex-wrap gap-3 mt-4">
+      <button class="add-to-google bg-red-600 text-white text-xs py-[2px] px-2 rounded-lg hover:bg-red-700 transition">
+        Google Naptár
+      </button>
+      <button class="add-to-ics bg-green-700 text-white text-xs py-[2px] px-2 rounded-lg hover:bg-gray-800 transition">
+        Letöltés (.ics)
+      </button>
+    </div>
+</div>
+
+<div class="protest-box bg-white rounded-xl shadow-lg p-6 w-full max-w-2xl border-l-8 border-green-600 transition hover:scale-105" data-search="Kir&#225;ndul&#225;s Hatvanpuszt&#225;ra II.">
+    <div class="flex items-center gap-3 mb-2">
+        <svg class="w-7 h-7 text-red-700" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 018 8c0 5.25-8 10-8 10S2 15.25 2 10a8 8 0 018-8zm0 10a2 2 0 100-4 2 2 0 000 4z" /></svg>
+        <span class="text-xl font-bold text-gray-800">Kir&#225;ndul&#225;s Hatvanpuszt&#225;ra II.</span>
+    </div>
+    <div class="flex flex-wrap gap-4 text-gray-700 mb-2">
+        <div><span class="font-semibold">Időpont:</span> 2025. szeptember 27. (szombat) 14:00
+        <span class="hidden iso-date">2025-09-27T14:00:00</span></div>
+        <div><span class="font-semibold">Helyszín:</span><a href="https://www.google.com/maps?q=Hatvanpuszta%2C%20Alcs%C3%BAtdoboz%208087%2C%20Magyarorsz%C3%A1g" class="underline" target=\"_blank\"> Hatvanpuszta, Alcs&#250;tdoboz 8087, Magyarorsz&#225;g</a></div>
+        <div><span class="font-semibold">Szervező:</span> Hadh&#225;zy &#193;kos</div>
+        <div><span class="font-semibold text-red-700"></span></div>
+        <div><span class="font-semibold text-red-700"></span></div>
+    </div>
+    <div class="flex flex-wrap gap-3 mt-4">
+      <button class="add-to-google bg-red-600 text-white text-xs py-[2px] px-2 rounded-lg hover:bg-red-700 transition">
+        Google Naptár
+      </button>
+      <button class="add-to-ics bg-green-700 text-white text-xs py-[2px] px-2 rounded-lg hover:bg-gray-800 transition">
+        Letöltés (.ics)
+      </button>
+    </div>
+</div>
+
+<div class="protest-box bg-white rounded-xl shadow-lg p-6 w-full max-w-2xl border-l-8 border-red-700 transition hover:scale-105" data-search="P&#233;cs Pride">
+    <div class="flex items-center gap-3 mb-2">
+        <svg class="w-7 h-7 text-green-700" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 018 8c0 5.25-8 10-8 10S2 15.25 2 10a8 8 0 018-8zm0 10a2 2 0 100-4 2 2 0 000 4z" /></svg>
+        <span class="text-xl font-bold text-gray-800">P&#233;cs Pride</span>
+    </div>
+    <div class="flex flex-wrap gap-4 text-gray-700 mb-2">
+        <div><span class="font-semibold">Időpont:</span> 2025. október 4. (szombat) 
+        <span class="hidden iso-date">2025-10-04T00:00:00</span></div>
+        <div><span class="font-semibold">Helyszín:</span><a href="https://www.google.com/maps?q=P%C3%A9cs" class="underline" target=\"_blank\"> P&#233;cs</a></div>
+        <div><span class="font-semibold">Szervező:</span> Diverse Youth Network</div>
+        <div><span class="font-semibold text-red-700"></span></div>
+        <div><span class="font-semibold text-red-700">Nem enged&#233;lyezett</span></div>
+    </div>
+    <div class="flex flex-wrap gap-3 mt-4">
+      <button class="add-to-google bg-red-600 text-white text-xs py-[2px] px-2 rounded-lg hover:bg-red-700 transition">
+        Google Naptár
+      </button>
+      <button class="add-to-ics bg-green-700 text-white text-xs py-[2px] px-2 rounded-lg hover:bg-gray-800 transition">
+        Letöltés (.ics)
+      </button>
+    </div>
+</div>
+
+<div class="protest-box bg-white rounded-xl shadow-lg p-6 w-full max-w-2xl border-l-8 border-green-600 transition hover:scale-105" data-search="A vad&#225;llatoknak a k&#246;zleked&#233;s biztons&#225;g&#225;t vesz&#233;lyeztető t&#250;lszapor&#237;t&#225;sa elleni demonstr&#225;ci&#243;">
+    <div class="flex items-center gap-3 mb-2">
+        <svg class="w-7 h-7 text-red-700" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 018 8c0 5.25-8 10-8 10S2 15.25 2 10a8 8 0 018-8zm0 10a2 2 0 100-4 2 2 0 000 4z" /></svg>
+        <span class="text-xl font-bold text-gray-800">A vad&#225;llatoknak a k&#246;zleked&#233;s biztons&#225;g&#225;t vesz&#233;lyeztető t&#250;lszapor&#237;t&#225;sa elleni demonstr&#225;ci&#243;</span>
+    </div>
+    <div class="flex flex-wrap gap-4 text-gray-700 mb-2">
+        <div><span class="font-semibold">Időpont:</span> 2025. október 4. (szombat) 
+        <span class="hidden iso-date">2025-10-04T00:00:00</span></div>
+        <div><span class="font-semibold">Helyszín:</span><a href="https://www.google.com/maps?q=P%C3%A9cs" class="underline" target=\"_blank\"> P&#233;cs</a></div>
+        <div><span class="font-semibold">Szervező:</span> Heindl P&#233;ter</div>
+        <div><span class="font-semibold text-red-700"></span></div>
+        <div><span class="font-semibold text-red-700"></span></div>
+    </div>
+    <div class="flex flex-wrap gap-3 mt-4">
+      <button class="add-to-google bg-red-600 text-white text-xs py-[2px] px-2 rounded-lg hover:bg-red-700 transition">
+        Google Naptár
+      </button>
+      <button class="add-to-ics bg-green-700 text-white text-xs py-[2px] px-2 rounded-lg hover:bg-gray-800 transition">
+        Letöltés (.ics)
+      </button>
+    </div>
+</div>
+
+<div class="protest-box bg-white rounded-xl shadow-lg p-6 w-full max-w-2xl border-l-8 border-red-700 transition hover:scale-105" data-search="Pride-ellenes tiltakoz&#225;s">
+    <div class="flex items-center gap-3 mb-2">
+        <svg class="w-7 h-7 text-green-700" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 018 8c0 5.25-8 10-8 10S2 15.25 2 10a8 8 0 018-8zm0 10a2 2 0 100-4 2 2 0 000 4z" /></svg>
+        <span class="text-xl font-bold text-gray-800">Pride-ellenes tiltakoz&#225;s</span>
+    </div>
+    <div class="flex flex-wrap gap-4 text-gray-700 mb-2">
+        <div><span class="font-semibold">Időpont:</span> 2025. október 4. (szombat) 
+        <span class="hidden iso-date">2025-10-04T00:00:00</span></div>
+        <div><span class="font-semibold">Helyszín:</span><a href="https://www.google.com/maps?q=P%C3%A9cs%2C%20a%20P%C3%A9cs%20Pride%20tervezett%20%C3%BAtvonal%C3%A1n%2C%20%C3%B6t%20k%C3%BCl%C3%B6nb%C3%B6z%C5%91%20helysz%C3%ADnen" class="underline" target=\"_blank\"> P&#233;cs, a P&#233;cs Pride tervezett &#250;tvonal&#225;n, &#246;t k&#252;l&#246;nb&#246;ző helysz&#237;nen</a></div>
+        <div><span class="font-semibold">Szervező:</span> Varga Tam&#225;s (Mi Haz&#225;nk)</div>
+        <div><span class="font-semibold text-red-700"></span></div>
+        <div><span class="font-semibold text-red-700"></span></div>
+    </div>
+    <div class="flex flex-wrap gap-3 mt-4">
+      <button class="add-to-google bg-red-600 text-white text-xs py-[2px] px-2 rounded-lg hover:bg-red-700 transition">
+        Google Naptár
+      </button>
+      <button class="add-to-ics bg-green-700 text-white text-xs py-[2px] px-2 rounded-lg hover:bg-gray-800 transition">
+        Letöltés (.ics)
+      </button>
+    </div>
+</div>
+
+<div class="protest-box bg-white rounded-xl shadow-lg p-6 w-full max-w-2xl border-l-8 border-green-600 transition hover:scale-105" data-search="Nemzeti menet">
+    <div class="flex items-center gap-3 mb-2">
+        <svg class="w-7 h-7 text-red-700" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 018 8c0 5.25-8 10-8 10S2 15.25 2 10a8 8 0 018-8zm0 10a2 2 0 100-4 2 2 0 000 4z" /></svg>
+        <span class="text-xl font-bold text-gray-800">Nemzeti menet</span>
+    </div>
+    <div class="flex flex-wrap gap-4 text-gray-700 mb-2">
+        <div><span class="font-semibold">Időpont:</span> 2025. október 23. (csütörtök) 14:00
+        <span class="hidden iso-date">2025-10-23T14:00:00</span></div>
+        <div><span class="font-semibold">Helyszín:</span><a href="https://www.google.com/maps?q=Budapest%2C%20De%C3%A1k%20Ferenc%20t%C3%A9rr%C5%91l%20indulva%2C%20a%20H%C5%91s%C3%B6k%20ter%C3%A9n%20tartj%C3%A1k%20a%20megeml%C3%A9kez%C3%A9st." class="underline" target=\"_blank\"> Budapest, De&#225;k Ferenc t&#233;rről indulva, a Hős&#246;k ter&#233;n tartj&#225;k a megeml&#233;kez&#233;st.</a></div>
+        <div><span class="font-semibold">Szervező:</span> Magyar P&#233;ter, Tisza P&#225;rt</div>
+        <div><span class="font-semibold text-red-700"></span></div>
+        <div><span class="font-semibold text-red-700"></span></div>
+    </div>
+    <div class="flex flex-wrap gap-3 mt-4">
+      <button class="add-to-google bg-red-600 text-white text-xs py-[2px] px-2 rounded-lg hover:bg-red-700 transition">
+        Google Naptár
+      </button>
+      <button class="add-to-ics bg-green-700 text-white text-xs py-[2px] px-2 rounded-lg hover:bg-gray-800 transition">
+        Letöltés (.ics)
+      </button>
+    </div>
+</div><p class="text-sm max-w-3xl mx-auto">Készült : 2025. 09. 22. 19:12:51</p>
+
+    </div>
+
+    <!-- Szervezés -->
+    <div class="bg-gray-100 rounded-xl shadow-inner p-6 max-w-2xl mx-auto mb-16">
+        <h2 class="text-xl font-bold text-green-700 mb-5">Nincs elég tüntetés? Szervezz magadnak!</h2>
+
+        <h3 class="text-lg font-semibold mt-4 mb-2">1. Kinek kell bejelenteni?</h3>
+        <ul class="list-disc list-inside space-y-1 ml-4">
+            <li>A rendőrségnek, pontosabban a <strong>gyűlés helye szerint illetékes rendőrkapitányságnak</strong>.</li>
+        </ul>
+
+        <h3 class="text-lg font-semibold mt-4 mb-2">2. Mikor kell bejelenteni?</h3>
+        <ul class="list-disc list-inside space-y-1 ml-4">
+            <li>Legalább <strong>48 órával a kezdés előtt</strong>.</li>
+        </ul>
+
+        <h3 class="text-lg font-semibold mt-4 mb-2">3. Mit kell tartalmaznia a bejelentésnek?</h3>
+        <ul class="list-disc list-inside space-y-1 ml-4">
+            <li>A gyűlés célja</li>
+            <li>Helyszín és pontos útvonal (ha vonulás van)</li>
+            <li>Időpont, kezdés és várható befejezés</li>
+            <li>Szervező neve, elérhetősége</li>
+        </ul>
+
+        <h3 class="text-lg font-semibold mt-4 mb-2">4. Hogyan lehet beadni?</h3>
+        <ul class="list-disc list-inside space-y-1 ml-4">
+            <li>Személyesen a rendőrkapitányságon</li>
+            <li>Postán :  <a href="https://www.police.hu/hu/ugyintezes" class="text-blue-600 underline">a rendőrkapitányságok postacímét itt találod</a></li>
+            <li><a href="https://ugyintezes.police.hu" class="text-blue-600 underline">Online az ügyintézés.police.hu oldalon</a></li>
+        </ul>
+
+        <h3 class="text-lg font-semibold mt-4 mb-2">5. Mi történik a bejelentés után?</h3>
+        <ul class="list-disc list-inside space-y-1 ml-4">
+            <li>Ha 48 órán belül nem tiltják meg vagy hívnak be egyeztetésre, akkor úgy lehet tekinteni, hogy a bejelentést tudomásul vették és megtarthatod a gyűlést.</li>
+            <li>Csak akkor tilthatják meg, ha aránytalanul akadályozza a közlekedést vagy más rendezvényt vagy törvénybe ütközik.</li>
+        </ul>
+
+        <h3 class="text-lg font-semibold mt-4 mb-2">6. Mond el nekünk is!</h3>
+        <ul class="list-disc list-inside space-y-1 ml-4">
+            <li>Hozz létre egy Facebook eseményt.</li>
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdi75hllTwtXNVnkA3kXMbCzv-ZD1lkQVRc2KcMMbzufPEyMQ/viewform?usp=dialog" class="text-blue-600 underline">Küld el nekünk az esemény linkjét</a>.</li>
+        </ul>
+    </div>
+
+    <!-- Megosztás sáv -->
+    <div class="bg-gray-100 rounded-xl shadow-inner p-6 max-w-2xl mx-auto mb-16">
+        <h2 class="text-xl font-bold text-green-700 mb-5">Communica et impera</h2>
+        <div class="mt-4 flex flex-wrap gap-3">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://tuntetes.info"
+               target="_blank" rel="noopener"
+               class="flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-current" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 5 3.657 9.128 8.438 9.877v-6.988h-2.54v-2.889h2.54V9.797c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.463h-1.261c-1.243 0-1.631.771-1.631 1.562v1.875h2.773l-.443 2.889h-2.33v6.988C18.343 21.128 22 17 22 12z" /></svg>
+                Facebook
+            </a>
+
+            <!-- WhatsApp -->
+            <a href="https://api.whatsapp.com/send?text=Csatlakozz: https://tuntetes.info"
+               target="_blank" rel="noopener"
+               class="flex items-center gap-2 bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-current" viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.94 14.39L2 22l5.77-1.93A10 10 0 1012 2zm0 18a7.93 7.93 0 01-4.11-1.17l-.29-.17-3.43 1.15 1.13-3.34-.19-.31A7.94 7.94 0 1112 20zm4.46-5.62c-.24-.12-1.42-.7-1.64-.78s-.38-.12-.54.12c-.16.23-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.92-1.19-.71-.63-1.19-1.41-1.33-1.65-.14-.24-.02-.38.1-.5.1-.1.24-.26.36-.39.12-.13.16-.22.24-.36.08-.14.04-.27-.02-.39-.06-.12-.54-1.3-.74-1.78-.2-.48-.4-.42-.54-.43-.14-.01-.3-.01-.46-.01-.16 0-.42.06-.64.29-.22.23-.84.82-.84 2s.86 2.31.98 2.47c.12.16 1.7 2.6 4.12 3.64.58.25 1.03.39 1.38.5.58.18 1.1.15 1.52.09.46-.07 1.42-.58 1.62-1.14.2-.56.2-1.03.14-1.14-.06-.11-.22-.18-.46-.3z" /></svg>
+                WhatsApp
+            </a>
+
+            <!-- Telegram -->
+            <a href="https://t.me/share/url?url=https://tuntetes.info&text=Tüntetésnaptár"
+               target="_blank" rel="noopener"
+               class="flex items-center gap-2 bg-cyan-600 text-white px-4 py-2 rounded-lg hover:bg-cyan-700 transition">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-current" viewBox="0 0 24 24"><path d="M9.999 15.17l-.39 3.47c.56 0 .8-.24 1.09-.53l2.61-2.5 5.41 3.95c.99.55 1.69.26 1.94-.92l3.52-16.5c.36-1.64-.59-2.28-1.64-1.88L1.58 9.19c-1.6.62-1.59 1.5-.29 1.9l4.57 1.42 10.63-6.69c.5-.34.95-.15.58.19" /></svg>
+                Telegram
+            </a>
+
+            <!-- X (Twitter) -->
+            <a href="https://twitter.com/intent/tweet?url=https://tuntetes.info&text=Tüntetésnaptár"
+               target="_blank" rel="noopener"
+               class="flex items-center gap-2 bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-current" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26L22 21.75h-6.594l-5.16-6.759-5.908 6.759H1.03l7.73-8.835L2 2.25h6.75l4.66 6.186 4.834-6.186z" /></svg>
+                X
+            </a>
+
+            <!-- Reddit -->
+            <a href="https://www.reddit.com/submit?url=https://tuntetes.info&title=Tüntetésnaptár"
+               target="_blank" rel="noopener"
+               class="flex items-center gap-2 bg-orange-600 text-white px-4 py-2 rounded-lg hover:bg-orange-700 transition">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-current" viewBox="0 0 24 24"><path d="M24 12c0-6.627-5.373-12-12-12S0 5.373 0 12c0 5.302 3.438 9.8 8.205 11.385.6.111.82-.261.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.757-1.333-1.757-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.807 1.304 3.492.997.108-.775.419-1.305.762-1.605-2.665-.304-5.467-1.334-5.467-5.932 0-1.31.469-2.381 1.236-3.221-.123-.304-.536-1.527.117-3.176 0 0 1.008-.322 3.301 1.23a11.48 11.48 0 013.004-.404c1.018.005 2.044.138 3.003.404 2.292-1.552 3.299-1.23 3.299-1.23.654 1.649.242 2.872.119 3.176.77.84 1.236 1.911 1.236 3.221 0 4.61-2.807 5.625-5.479 5.922.43.372.823 1.102.823 2.222v3.293c0 .318.219.694.825.576C20.565 21.796 24 17.298 24 12z" /></svg>
+                Reddit
+            </a>
+        </div>
+    </div>
+    <!-- Cookie és GDPR értesítés -->
+    <div id="cookieBanner" class="fixed bottom-0 left-0 w-full bg-white border-t border-gray-300 shadow-lg p-4 flex flex-col md:flex-row items-center justify-between z-50 transition">
+        <span class="text-gray-700 mb-2 md:mb-0">
+            Ez a weboldal sütiket használ a felhasználói élmény javításához. Az oldal használatával elfogadod az <a href="#" class="text-green-700 underline">Adatkezelési tájékoztatót</a>.
+        </span>
+        <button onclick="acceptCookies()" class="bg-green-700 text-white px-5 py-2 rounded-lg font-bold hover:bg-green-800 transition">Elfogadom</button>
+    </div>
+    <!-- Szűrés JS -->
+    <script>
+        const filterInput = document.getElementById('filterInput');
+        filterInput.addEventListener('input', function () {
+            const filter = this.value.toLowerCase();
+            document.querySelectorAll('.protest-box').forEach(box => {
+                // Szöveg kigyűjtése: cím, helyszín, szervező
+                const title = box.querySelector('span.text-xl').textContent.toLowerCase();
+                const details = box.querySelectorAll('.flex.flex-wrap > div');
+                let location = '', organizer = '';
+                details.forEach(div => {
+                    if (div.textContent.includes('Helyszín:')) location = div.textContent.toLowerCase();
+                    if (div.textContent.includes('Szervező:')) organizer = div.textContent.toLowerCase();
+                });
+                // Szűrés bármelyik mezőre
+                if (title.includes(filter) || location.includes(filter) || organizer.includes(filter)) {
+                    box.style.display = '';
+                } else {
+                    box.style.display = 'none';
+                }
+            });
+        });
+
+        // Cookie banner
+        function acceptCookies() {
+            document.getElementById('cookieBanner').style.display = 'none';
+            document.cookie = "cookieConsent=true; path=/; max-age=31536000";
+        }
+        // Hide banner if already accepted
+        if (document.cookie.includes('cookieConsent=true')) {
+            document.getElementById('cookieBanner').style.display = 'none';
+        }</script>
+
+    <script>
+        function formatDateForGoogle(dateStr) {
+            let d = new Date(dateStr); // ISO string
+            return d.toISOString().replace(/[-:]/g, '').split('.')[0] + "Z";
+        }
+
+        document.querySelectorAll('.protest-box').forEach((box, idx) => {
+            const title = box.querySelector('span.text-xl')?.innerText || "Esemény";
+            const detailsDivs = box.querySelectorAll('.flex.flex-wrap > div');
+
+            let location = "", organizer = "", dateText = "";
+            detailsDivs.forEach(div => {
+                if (div.textContent.includes("Helyszín:")) location = div.textContent.replace("Helyszín:", "").trim();
+                if (div.textContent.includes("Időpont:")) dateText = dateText = div.querySelector('.iso-date')?.innerText.trim() || "";;
+                if (div.textContent.includes("Szervező:")) organizer = div.textContent.replace("Szervező:", "").trim();
+            });
+
+            // kezdés és (opcionális) vég
+            const start = formatDateForGoogle(dateText);
+            // végidő: +2 óra
+            const end = new Date(new Date(dateText.replace(/\(.+?\)/, '').trim()).getTime() + 2 * 60 * 60 * 1000)
+                .toISOString().replace(/[-:]/g, '').split('.')[0] + "Z";
+
+            // Google Calendar link
+            const googleUrl = `https://www.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title)}&dates=${start}/${end}&details=${encodeURIComponent("Szervező: " + organizer)}&location=${encodeURIComponent(location)}`;
+
+            // ICS tartalom
+            const icsContent = `BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Tuntetesek.info//HU
+BEGIN:VEVENT
+UID:${idx}@tuntetesek.info
+DTSTAMP:${start}
+DTSTART:${start}
+DTEND:${end}
+SUMMARY:${title}
+LOCATION:${location}
+DESCRIPTION:Szervező: ${organizer}
+END:VEVENT
+END:VCALENDAR`;
+
+            // gombok hozzárendelése
+            const gBtn = box.querySelector('.add-to-google');
+            if (gBtn) gBtn.addEventListener('click', () => {
+                window.open(googleUrl, "_blank");
+            });
+
+            const iBtn = box.querySelector('.add-to-ics');
+            if (iBtn) iBtn.addEventListener('click', () => {
+                const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
+                const link = document.createElement('a');
+                link.href = URL.createObjectURL(blob);
+                link.download = `${title.replace(/\s+/g, "_")}.ics`;
+                link.click();
+            });
+        });
+    </script>
+
+    <!-- Footer -->
+    <footer class="mt-auto bg-green-700 text-gray-200 text-center py-6 px-4">
+        <p class="text-sm max-w-3xl mx-auto">
+            Ez egy automatizáltan generált oldal, így az adatok esetleg elévültek vagy pontatlanok lehetnek.
+            Indulás előtt mindig csekkold a szervezőnél.
+            Az oldal használatával elfogadod az <a href="adatkezeles.html" class="underline">Adatkezelési tájékoztatót</a>.
+        </p>
+        <p class="text-xs text-gray-400 mt-2">
+            &copy; 2025 Tuntetes.info
+        </p>
+    </footer>
+</body>
+</html>
