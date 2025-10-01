@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
                                 <urlset
                                       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
                                       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -111,7 +111,7 @@
 <priority>0.50</priority>
 </url>
 <url>
-<loc>https://tuntetes.info/hatvanpuszta-szafari:-a-majorsag-atlathatosagaert-es-a-korrupcio-ellen-2025-09-27.html</loc>
+<loc>https://tuntetes.info/hatvanpuszta-szafari-a-majorsag-atlathatosagaert-es-a-korrupcio-ellen-2025-09-27.html</loc>
 <changefreq>weekly</changefreq>
 <priority>0.50</priority>
 </url>
@@ -151,12 +151,12 @@
 <priority>0.50</priority>
 </url>
 <url>
-<loc>https://tuntetes.info/legyen-vege!-nema-kiallas-azok-mellett-akiket-nem-hallunk-2025-09-28.html</loc>
+<loc>https://tuntetes.info/legyen-vege-nema-kiallas-azok-mellett-akiket-nem-hallunk-2025-09-28.html</loc>
 <changefreq>weekly</changefreq>
 <priority>0.50</priority>
 </url>
 <url>
-<loc>https://tuntetes.info/levegot!-kiallas-a-szabad-kozterekert-es-a-tiszta-kozbeszedert-2025-09-21.html</loc>
+<loc>https://tuntetes.info/levegot-kiallas-a-szabad-kozterekert-es-a-tiszta-kozbeszedert-2025-09-21.html</loc>
 <changefreq>weekly</changefreq>
 <priority>0.50</priority>
 </url>
@@ -221,12 +221,7 @@
 <priority>0.50</priority>
 </url>
 <url>
-<loc>https://tuntetes.info/nem-hagyjuk-abba!-2025-09-16.html</loc>
-<changefreq>weekly</changefreq>
-<priority>0.50</priority>
-</url>
-<url>
-<loc>https://tuntetes.info/nem-hagyjuk-abba!-2025-09-30.html</loc>
+<loc>https://tuntetes.info/nem-hagyjuk-abba-2025-09-16.html</loc>
 <changefreq>weekly</changefreq>
 <priority>0.50</priority>
 </url>
@@ -276,7 +271,7 @@
 <priority>0.50</priority>
 </url>
 <url>
-<loc>https://tuntetes.info/stop-lazar!-alljunk-ki-a-gyul-olet-ellen!-2025-09-26.html</loc>
+<loc>https://tuntetes.info/stop-lazar-alljunk-ki-a-gyul-olet-ellen-2025-09-26.html</loc>
 <changefreq>weekly</changefreq>
 <priority>0.50</priority>
 </url>
@@ -301,12 +296,22 @@
 <priority>0.50</priority>
 </url>
 <url>
+<loc>https://tuntetes.info/tiltakozas-a-kormany-demokraciaellenes-intezkedesei-ellen-2025-10-07.html</loc>
+<changefreq>weekly</changefreq>
+<priority>0.50</priority>
+</url>
+<url>
 <loc>https://tuntetes.info/tiltakozas-alekszej-navalnij-emlekhelyenek-eltavolitasa-ellen-es-az-eredeti-allapot-visszaallitasanak-kovetelese-2025-09-24.html</loc>
 <changefreq>weekly</changefreq>
 <priority>0.50</priority>
 </url>
 <url>
 <loc>https://tuntetes.info/tiltakozas-a-lomtalanitasi-es-szemetszallitasi-problemak-miatt-a-felhalmozodott-hulladek-elszallitasaval-a-mol-szekhaz-ele-2025-09-27.html</loc>
+<changefreq>weekly</changefreq>
+<priority>0.50</priority>
+</url>
+<url>
+<loc>https://tuntetes.info/tiltakozas-a-rendori-fellepes-es-a-megfelemlites-ellen-2025-09-30.html</loc>
 <changefreq>weekly</changefreq>
 <priority>0.50</priority>
 </url>
