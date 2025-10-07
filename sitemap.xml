@@ -166,6 +166,11 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
 <priority>0.50</priority>
 </url>
 <url>
+<loc>https://tuntetes.info/lazarinfo-2025-10-07.html</loc>
+<changefreq>daily</changefreq>
+<priority>0.50</priority>
+</url>
+<url>
 <loc>https://tuntetes.info/legyen-vege-nema-kiallas-azok-mellett-akiket-nem-hallunk-2025-09-28.html</loc>
 <changefreq>daily</changefreq>
 <priority>0.50</priority>
@@ -177,6 +182,11 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
 </url>
 <url>
 <loc>https://tuntetes.info/loupe-szinhazi-tarsulas.html</loc>
+<changefreq>daily</changefreq>
+<priority>0.50</priority>
+</url>
+<url>
+<loc>https://tuntetes.info/magyar-koztisztviselok-kozalkalmazottak-es-kozszolgalati-dolgozok-szakszervezete.html</loc>
 <changefreq>daily</changefreq>
 <priority>0.50</priority>
 </url>
@@ -282,6 +292,11 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
 </url>
 <url>
 <loc>https://tuntetes.info/orban-viktor.html</loc>
+<changefreq>daily</changefreq>
+<priority>0.50</priority>
+</url>
+<url>
+<loc>https://tuntetes.info/orban-viktor-jottunk-a-beremelesert-2025-10-06.html</loc>
 <changefreq>daily</changefreq>
 <priority>0.50</priority>
 </url>
