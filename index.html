@@ -28,6 +28,11 @@
             height: 8px;
         }
     </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FWJ9RMK40Z"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-FWJ9RMK40Z');</script>
+    <!-- Event snippet for Oldalmegtekintés conversion page -->
+    <script>gtag('event', 'conversion', { 'send_to': 'AW-1041531780/3d6xCN-Bvq8bEISH0vAD', 'value': 1.0, 'currency': 'HUF' });</script>
 </head>
 <body class="bg-gray-50 min-h-screen flex flex-col">
     <!-- Magyar zászló színek -->
@@ -503,7 +508,7 @@
         Letöltés (.ics)
       </button>
     </div>
-</div><p class="text-sm max-w-3xl mx-auto">Készült : 2025. 10. 19. 14:46:48</p>
+</div><p class="text-sm max-w-3xl mx-auto">Készült : 2025. 10. 19. 15:14:13</p>
 
     </div>
 
@@ -605,24 +610,32 @@
     <script>
         const filterInput = document.getElementById('filterInput');
         filterInput.addEventListener('input', function () {
-            const filter = this.value.toLowerCase();
-            document.querySelectorAll('.protest-box').forEach(box => {
-                // Szöveg kigyűjtése: cím, helyszín, szervező
-                if (!box.hasAttribute('data-search')) return;
-                const title = box.querySelector('span.text-xl').textContent.toLowerCase();
-                const details = box.querySelectorAll('.flex.flex-wrap > div');
-                let location = '', organizer = '';
-                details.forEach(div => {
-                    const text = div.textContent.toLowerCase();
-                    if (text.includes('helyszín:')) location = text;
-                    if (text.includes('szervező:')) organizer = text;
-                });
-                // Szűrés bármelyik mezőre
-                if (title.includes(filter) || location.includes(filter) || organizer.includes(filter)) {
-                    box.style.display = '';
-                } else {
-                    box.style.display = 'none';
-                }
+            const filter = this.value.toLowerCase().trim();
+
+        document.querySelectorAll('.protest-box').forEach(box => {
+            // Cím
+            const title = box.querySelector('span.text-xl')?.textContent.toLowerCase() || '';
+
+            // Helyszín és szervező
+            let location = '';
+            let organizer = '';
+
+            box.querySelectorAll('span.font-semibold').forEach(span => {
+                const label = span.textContent.toLowerCase().trim();
+                const valueElem = span.nextElementSibling;
+                const value = valueElem ? valueElem.textContent.toLowerCase() : '';
+
+                if (label.startsWith('helyszín:')) location = value;
+                if (label.startsWith('szervező:')) organizer = value;
+            });
+
+            // Szűrés
+            const matches =
+                title.includes(filter) ||
+                location.includes(filter) ||
+                organizer.includes(filter);
+
+            box.style.display = matches ? '' : 'none';
             });
         });
 
@@ -641,17 +654,6 @@
             let d = new Date(dateStr); // ISO string
             return d.toISOString().replace(/[-:]/g, '').split('.')[0] + "Z";
         }
-
-        document.querySelectorAll('.protest-box').forEach((box, idx) => {
-            const title = box.querySelector('span.text-xl')?.innerText || "Esemény";
-            const detailsDivs = box.querySelectorAll('.flex.flex-wrap > div');
-
-            let location = "", organizer = "", dateText = "";
-            detailsDivs.forEach(div => {
-                if (div.textContent.includes("Helyszín:")) location = div.textContent.replace("Helyszín:", "").trim();
-                if (div.textContent.includes("Időpont:")) dateText = dateText = div.querySelector('.iso-date')?.innerText.trim() || "";;
-                if (div.textContent.includes("Szervező:")) organizer = div.textContent.replace("Szervező:", "").trim();
-            });
 
             // kezdés és (opcionális) vég
             const start = formatDateForGoogle(dateText);
