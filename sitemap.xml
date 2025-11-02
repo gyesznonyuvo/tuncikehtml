@@ -646,6 +646,16 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
 <priority>0.50</priority>
 </url>
 <url>
+<loc>https://tuntetes.info/zebegenyi-halaltok-flashmob.html</loc>
+<changefreq>daily</changefreq>
+<priority>0.50</priority>
+</url>
+<url>
+<loc>https://tuntetes.info/zebegenyi-halaltok-flashmob-2025-10-31.html</loc>
+<changefreq>daily</changefreq>
+<priority>0.50</priority>
+</url>
+<url>
 <loc>https://tuntetes.info/zebraszerda.html</loc>
 <changefreq>daily</changefreq>
 <priority>0.50</priority>
