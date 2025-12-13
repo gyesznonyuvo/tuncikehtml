@@ -371,6 +371,11 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
 <priority>0.50</priority>
 </url>
 <url>
+<loc>https://tuntetes.info/judit-elor.html</loc>
+<changefreq>daily</changefreq>
+<priority>0.50</priority>
+</url>
+<url>
 <loc>https://tuntetes.info/karacsony-gergely.html</loc>
 <changefreq>daily</changefreq>
 <priority>0.50</priority>
@@ -902,6 +907,11 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
 </url>
 <url>
 <loc>https://tuntetes.info/szolidaritasi-gyules-az-elbocsatott-pedagogusok-kuriai-targyalasa-mellett-2025-10-01.html</loc>
+<changefreq>daily</changefreq>
+<priority>0.50</priority>
+</url>
+<url>
+<loc>https://tuntetes.info/szolidaritasi-seta-a-gyermekorvosokert-es-a-vedonokert-2025-12-13.html</loc>
 <changefreq>daily</changefreq>
 <priority>0.50</priority>
 </url>
