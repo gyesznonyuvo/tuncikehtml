@@ -336,6 +336,11 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
 <priority>0.50</priority>
 </url>
 <url>
+<loc>https://tuntetes.info/fuvarozok-tuntetnek-2025-12-22.html</loc>
+<changefreq>daily</changefreq>
+<priority>0.50</priority>
+</url>
+<url>
 <loc>https://tuntetes.info/gaal-gergely.html</loc>
 <changefreq>daily</changefreq>
 <priority>0.50</priority>
@@ -872,6 +877,11 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
 </url>
 <url>
 <loc>https://tuntetes.info/orban-viktor-jottunk-a-beremelesert-2025-10-06.html</loc>
+<changefreq>daily</changefreq>
+<priority>0.50</priority>
+</url>
+<url>
+<loc>https://tuntetes.info/orosz-tibor.html</loc>
 <changefreq>daily</changefreq>
 <priority>0.50</priority>
 </url>
