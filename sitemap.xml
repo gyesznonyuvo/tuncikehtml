@@ -931,6 +931,11 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
 <priority>0.50</priority>
 </url>
 <url>
+<loc>https://tuntetes.info/new-iran.html</loc>
+<changefreq>daily</changefreq>
+<priority>0.50</priority>
+</url>
+<url>
 <loc>https://tuntetes.info/obuda-onkormanyzata.html</loc>
 <changefreq>daily</changefreq>
 <priority>0.50</priority>
@@ -1187,6 +1192,11 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
 </url>
 <url>
 <loc>https://tuntetes.info/tuntetes-helyett-csendes-tiltakozas-2025-10-28.html</loc>
+<changefreq>daily</changefreq>
+<priority>0.50</priority>
+</url>
+<url>
+<loc>https://tuntetes.info/tuntetes-iran-szabdsagaert-2026-01-18.html</loc>
 <changefreq>daily</changefreq>
 <priority>0.50</priority>
 </url>
