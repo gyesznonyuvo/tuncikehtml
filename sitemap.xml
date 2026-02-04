@@ -1256,6 +1256,11 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
 <priority>0.50</priority>
 </url>
 <url>
+<loc>https://tuntetes.info/toroczkai-orszagjaras-2026-02-07.html</loc>
+<changefreq>daily</changefreq>
+<priority>0.50</priority>
+</url>
+<url>
 <loc>https://tuntetes.info/toth-zoltan-laszlo.html</loc>
 <changefreq>daily</changefreq>
 <priority>0.50</priority>
