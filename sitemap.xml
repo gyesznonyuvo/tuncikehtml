@@ -976,6 +976,11 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
 <priority>0.50</priority>
 </url>
 <url>
+<loc>https://tuntetes.info/magyar-peter-orszagjaras-2026-02-24.html</loc>
+<changefreq>daily</changefreq>
+<priority>0.50</priority>
+</url>
+<url>
 <loc>https://tuntetes.info/marki-zay-peter.html</loc>
 <changefreq>daily</changefreq>
 <priority>0.50</priority>
@@ -1392,6 +1397,11 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
 </url>
 <url>
 <loc>https://tuntetes.info/toroczkai-orszagjaras-2026-02-20.html</loc>
+<changefreq>daily</changefreq>
+<priority>0.50</priority>
+</url>
+<url>
+<loc>https://tuntetes.info/toroczkai-orszagjaras-2026-02-26.html</loc>
 <changefreq>daily</changefreq>
 <priority>0.50</priority>
 </url>
