@@ -51,6 +51,11 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
 <priority>0.50</priority>
 </url>
 <url>
+<loc>https://tuntetes.info/a-szabadsag-uzenete.html</loc>
+<changefreq>daily</changefreq>
+<priority>0.50</priority>
+</url>
+<url>
 <loc>https://tuntetes.info/a-szerb-koztarsasag-es-bosznia-hercegovina-fuvarozoi-szovetsegei.html</loc>
 <changefreq>daily</changefreq>
 <priority>0.50</priority>
@@ -337,6 +342,11 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
 </url>
 <url>
 <loc>https://tuntetes.info/duhos-nok-mozgalma.html</loc>
+<changefreq>daily</changefreq>
+<priority>0.50</priority>
+</url>
+<url>
+<loc>https://tuntetes.info/eendszervalto-gurulas-2026-2026-03-29.html</loc>
 <changefreq>daily</changefreq>
 <priority>0.50</priority>
 </url>
